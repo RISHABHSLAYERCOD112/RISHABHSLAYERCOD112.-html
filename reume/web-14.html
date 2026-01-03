@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { background: #020617; color: white; }
+        form { display: flex; flex-direction: column; width: 200px; padding: 20px; }
+    </style>
+</head>
+<body>
+    <form id="valForm">
+        <input type="text" id="uname" placeholder="Your Name">
+        <button type="submit">Validate</button>
+    </form>
+
+    <script>
+        document.getElementById("valForm").onsubmit = function(e) {
+            e.preventDefault();
+            let name = document.getElementById("uname").value;
+            if(name === "") {
+                alert("Name cannot be empty!");
+            } else {
+                alert("Welcome, " + name);
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <ul id="skillList">
+        <li>Python</li>
+    </ul>
+    <button onclick="addSkill()">Add Skill</button>
+
+    <script>
+        function addSkill() {
+            let li = document.createElement("li");
+            li.innerText = "Computer Vision";
+            document.getElementById("skillList").appendChild(li);
+        }
+    </script>
+</body>
+</html>

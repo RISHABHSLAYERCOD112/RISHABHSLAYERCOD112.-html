@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button id="clickBtn">Click Me</button>
+
+    <script>
+        const btn = document.getElementById("clickBtn");
+        function msg() { alert("Button Clicked!"); }
+        
+        btn.addEventListener("click", msg);
+        // btn.removeEventListener("click", msg); // To remove
+    </script>
+</body>
+</html>

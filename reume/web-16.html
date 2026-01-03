@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .hidden { display: none; }
+        .blue-text { color: #38bdf8; }
+    </style>
+</head>
+<body>
+    <div id="projectInfo" class="hidden">Smart Blind Man Stick 2.0</div>
+    <button onclick="toggle()">Toggle Project</button>
+
+    <script>
+        function toggle() {
+            let el = document.getElementById("projectInfo");
+            el.classList.toggle("hidden");
+            el.classList.toggle("blue-text");
+        }
+    </script>
+</body>
+</html>
